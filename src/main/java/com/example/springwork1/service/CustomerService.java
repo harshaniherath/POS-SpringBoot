@@ -2,21 +2,22 @@ package com.example.springwork1.service;
 
 import java.util.List;
 
+import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
-import com.example.springwork1.dto.CustomerDto;
 import com.example.springwork1.entity.Customer;
 
 @Service
 public interface CustomerService {
 
-    Customer saveCustomer(CustomerDto dto);
+    List<Customer> getCustomerList();
 
-    Customer updateCustomer(CustomerDto dto);
+    Customer createCustomer(Customer customer);
 
-    void deleteCustomer(String custId);
+    Customer getCustomerById(String id);
 
-    List<CustomerDto> loadAllCustomer();
+    Customer updateCustomer(String id, Customer customer);
 
-    Customer getCustomerById(String custId);
+    void deleteCustomer(String id);
+
 }
