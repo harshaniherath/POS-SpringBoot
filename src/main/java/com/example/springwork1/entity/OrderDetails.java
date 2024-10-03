@@ -13,7 +13,7 @@ public class OrderDetails {
     @Id
     private String itemCode;
 
-    private int qty;
+    private Integer qty;
 
     private Double unitPrice;
 
