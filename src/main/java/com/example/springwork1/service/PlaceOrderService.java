@@ -7,13 +7,14 @@ import org.springframework.stereotype.Service;
 import com.example.springwork1.dto.OrderDetailsDto;
 import com.example.springwork1.dto.OrderDto;
 import com.example.springwork1.entity.Order;
+import com.example.springwork1.entity.OrderDetails;
 
 @Service
 public interface PlaceOrderService {
 
-    Order placeOrder(OrderDto dto);
+    Order placeOrder(Order order);
 
-    List<OrderDto> LoadOrders();
+    List<Order> getAllOrders();
 
-    List<OrderDetailsDto> LoadOrderDeatils();
+    List<OrderDetails> getAllOrderDeatils();
 }

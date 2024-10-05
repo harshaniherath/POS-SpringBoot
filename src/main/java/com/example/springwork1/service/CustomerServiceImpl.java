@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.springwork1.dto.CustomerDto;
 import com.example.springwork1.entity.Customer;
 import com.example.springwork1.repository.CustomerRepository;
 
