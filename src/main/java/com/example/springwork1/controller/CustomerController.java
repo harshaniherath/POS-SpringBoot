@@ -27,7 +27,7 @@ public class CustomerController {
         return ResponseEntity.status(200).body(customerList);
     }
 
-    @PostMapping("/tasks")
+    @PostMapping("/customer")
     public ResponseEntity<String> createCustomer(@RequestBody Customer customer) {
 
         if (customer.getName() == null || customer.getName() == "") {
