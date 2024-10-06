@@ -18,4 +18,6 @@ public class OrderDto {
 
     private List<OrderDetailsDto> orderDetails;
 
+    private List<String> ItemIds;
+
 }

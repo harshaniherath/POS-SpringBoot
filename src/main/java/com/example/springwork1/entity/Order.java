@@ -26,6 +26,8 @@ public class Order {
 
     private LocalDateTime orderDateTime;
 
+    private Double totalPrice;
+
     @PrePersist
     protected void onCreate() {
         this.orderDateTime = LocalDateTime.now();

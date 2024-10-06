@@ -30,7 +30,7 @@ public class PlaceOrderServiceImpl implements PlaceOrderService {
     }
 
     @Override
-    public List<OrderDetails> getAllOrderDeatils() {
+    public List<OrderDetails> getAllOrderDetails() {
         return orderDetailsRepository.findAll();
     }
 }

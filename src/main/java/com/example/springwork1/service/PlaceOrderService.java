@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.springwork1.dto.OrderDetailsDto;
-import com.example.springwork1.dto.OrderDto;
 import com.example.springwork1.entity.Order;
 import com.example.springwork1.entity.OrderDetails;
 
@@ -16,5 +14,5 @@ public interface PlaceOrderService {
 
     List<Order> getAllOrders();
 
-    List<OrderDetails> getAllOrderDeatils();
+    List<OrderDetails> getAllOrderDetails();
 }
